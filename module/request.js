@@ -5,7 +5,7 @@ const {ApolloClient,InMemoryCache} = ApolloBoost // 引入必须设置的客户�
  
 const client = new ApolloClient({
   link: createHttpLink({
-    uri: "http://192.168.50.152:8888/graphql", // 这个url可以抽取到配置文件里
+    uri: "http://localhost:8888/graphql", // 这个url可以抽取到配置文件里
     fetch: fetch, 
   }),
   cache: new InMemoryCache(),

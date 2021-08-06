@@ -14,6 +14,7 @@ axios.get('http://cateraway-api-dev.ap-east-1.elasticbeanstalk.com/menu/categori
 				getMutate(addDishes, { add:dish}).then(res=>{
 					const {id}=res.data.addDishes[0]
 					dish.id = id
+					dish.count = 0
 					next3()
 				})
 			}).then(res=>{
